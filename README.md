@@ -9,18 +9,18 @@ and any combination of these transformations).
 
 ## Usage
 
-```make && ./101pong x0 y0 z0 x1 y1 z1 n```
+```make && ./102architect x y transfo1 arg11 [arg12] [transfo2 arg12 [arg22]] ...```
 
 ## Parameters
 
 | Parameter | Desription |
 |-----------|------------|
-| x0   | ball abscissa at time t - 1 |
-| y0   | ball ordinate at time t - 1 |
-| z0   | ball altitude at time t - 1 |
-| x1   | ball abscissa at time t |
-| y1   | ball ordinate at time t |
-| z1   | ball altitude at time t |
-| n    | time shift (greater than or equal to zero,integer) |
+| x       | abscissa of the original point |
+| y       | ordinate of the original point |
+| transfo | arg1 [arg2] |
+| -t i j  | translation along vector (i, j)
+| -z m n  | scaling by factors m (x-avis) and n (y-axis)
+|-r d     | rotation centered in O by a d degree angle
+| -s d    |reflection over the axis passing through O with an inclination angle of d degrees
 
-## Moulinette : 74.2%
+## Moulinette : 75%
